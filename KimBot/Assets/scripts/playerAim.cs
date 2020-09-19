@@ -16,8 +16,10 @@ public class playerAim : MonoBehaviour
 
 
     public Transform bulletShot;
-
-    public bool readyFire = true;
+    // delay fire varibles
+    public float nextFire = 0.0f;
+    public float delayFire = 0.5f;
+    //public bool readyFire = true;
 
     private Vector2 aimVector;
     private Vector3 target;
@@ -28,15 +30,17 @@ public class playerAim : MonoBehaviour
     
     private void Update()
     {
-        if(readyFire == false)
-        {
-            StartCoroutine(checkFireBool());
-        
-        }
-        
+
+        //if (readyFire == false)
+        //{
+        //    StartCoroutine(checkFireBool());
+
+        //}
+
+
 
     }
-    
+
     private void FixedUpdate()
     {
 
@@ -52,11 +56,12 @@ public class playerAim : MonoBehaviour
             aimRotation = Quaternion.AngleAxis(testAim, Vector3.forward);
             armRB.transform.rotation = Quaternion.Slerp(armRB.transform.rotation, aimRotation, turnSpeed * Time.time);
 
-            if (readyFire == true)
+            if (Time.time > nextFire)
             {
+                nextFire = Time.time + delayFire;
                 //bullet spawn
                 Instantiate(bulletShot, transform.position + (1.0f * transform.forward), transform.rotation);
-                readyFire = false;
+                //readyFire = false;
             }
             
 
@@ -80,12 +85,12 @@ public class playerAim : MonoBehaviour
     }
 
 
-    private IEnumerator checkFireBool()
-    {
-        //yield on a new YieldInstruction that waits for 5 seconds.
-        yield return new WaitForSeconds(5);
-        readyFire = true;
-    }
+    //private IEnumerator checkFireBool()
+    //{
+    //    //yield on a new YieldInstruction that waits for 5 seconds.
+    //    yield return new WaitForSeconds(1);
+    //    readyFire = true;
+    //}
 
     // Start is called before the first frame update
     void Start()

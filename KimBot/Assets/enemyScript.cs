@@ -31,6 +31,8 @@ public class enemyScript : MonoBehaviour
         //player.gameObject.GetComponent<SpriteRenderer>().size.x
         if (distance <=  2.1) {
             collided = true;
+            Destroy(gameObject);
+
             Debug.Log("hit");
         }
     }

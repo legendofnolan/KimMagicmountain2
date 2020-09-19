@@ -30,9 +30,14 @@ public class bulletControl : MonoBehaviour
     }
 
 
-    void OnTriggerEnter2D (Collider2D hitInfo)
+    void OnTriggerEnter2D(Collider2D coll)
     {
-        Destroy(gameObject);
+        if (coll.gameObject.name == "enemy")
+        {
+            Destroy(gameObject);
+            Destroy(coll.gameObject);
+        }
+        
     }
 
 

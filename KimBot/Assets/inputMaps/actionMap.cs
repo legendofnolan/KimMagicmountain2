@@ -95,7 +95,7 @@ public class @ActionMap : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""6d91db1b-79da-423d-b1b0-e3491caa8fe3"",
-                    ""path"": ""<DualShockGamepad>/rightShoulder"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -117,7 +117,7 @@ public class @ActionMap : IInputActionCollection, IDisposable
                 {
                     ""name"": ""left"",
                     ""id"": ""8cac25d3-4c13-403f-93e0-8fed6cdb13f7"",
-                    ""path"": ""<DualShockGamepad>/leftTrigger"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -128,7 +128,7 @@ public class @ActionMap : IInputActionCollection, IDisposable
                 {
                     ""name"": ""right"",
                     ""id"": ""42fb4659-54d8-4a5c-94e7-6190918796f2"",
-                    ""path"": ""<DualShockGamepad>/rightTrigger"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -139,7 +139,7 @@ public class @ActionMap : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""aaf11a60-af63-414b-901e-76ca0c9e3c29"",
-                    ""path"": ""<DualShockGamepad>/rightTrigger"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -150,7 +150,7 @@ public class @ActionMap : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""471e11d3-4331-4575-aeac-4776003a7b56"",
-                    ""path"": ""<DualShockGamepad>/leftTrigger"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -161,7 +161,7 @@ public class @ActionMap : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""2a55bdcb-8c75-48ca-a009-c755a00b5151"",
-                    ""path"": ""<DualShockGamepad>/leftShoulder"",
+                    ""path"": ""<Gamepad>/leftShoulder"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -183,7 +183,7 @@ public class @ActionMap : IInputActionCollection, IDisposable
                 {
                     ""name"": ""negative"",
                     ""id"": ""42bddc78-984c-4b31-ba70-648e96cfdc3f"",
-                    ""path"": ""<DualShockGamepad>/rightStick/down"",
+                    ""path"": ""<Gamepad>/rightStick/down"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -194,7 +194,7 @@ public class @ActionMap : IInputActionCollection, IDisposable
                 {
                     ""name"": ""positive"",
                     ""id"": ""42d36f5a-76cc-4192-811e-8f158aee74b4"",
-                    ""path"": ""<DualShockGamepad>/rightStick/up"",
+                    ""path"": ""<Gamepad>/rightStick/up"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -249,7 +249,7 @@ public class @ActionMap : IInputActionCollection, IDisposable
                 {
                     ""name"": ""negative"",
                     ""id"": ""4c39d075-c8ae-4b0e-adac-2632d43e6ce0"",
-                    ""path"": ""<DualShockGamepad>/leftStick/down"",
+                    ""path"": ""<Gamepad>/leftStick/down"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -260,7 +260,7 @@ public class @ActionMap : IInputActionCollection, IDisposable
                 {
                     ""name"": ""positive"",
                     ""id"": ""b58a58f2-868f-4cc2-8263-ae94bacb69c9"",
-                    ""path"": ""<DualShockGamepad>/leftStick/up"",
+                    ""path"": ""<Gamepad>/leftStick/up"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -282,7 +282,7 @@ public class @ActionMap : IInputActionCollection, IDisposable
                 {
                     ""name"": ""negative"",
                     ""id"": ""dc371c25-2f8f-4a88-992b-24fc94d1bda8"",
-                    ""path"": ""<DualShockGamepad>/leftStick/left"",
+                    ""path"": ""<Gamepad>/leftStick/left"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -293,7 +293,7 @@ public class @ActionMap : IInputActionCollection, IDisposable
                 {
                     ""name"": ""positive"",
                     ""id"": ""d21dfc51-4d36-41d3-afa2-097e78850608"",
-                    ""path"": ""<DualShockGamepad>/leftStick/right"",
+                    ""path"": ""<Gamepad>/leftStick/right"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

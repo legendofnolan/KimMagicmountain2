@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 1536
     height: 780.8
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 592}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 781
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 592}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -98,10 +98,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 579, y: 442}
-  m_MaxSize: {x: 12004, y: 8042}
+  m_MinSize: {x: 876, y: 542}
+  m_MaxSize: {x: 12003, y: 8042}
   vertical: 0
-  controlID: 17
+  controlID: 94
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,10 +144,10 @@ MonoBehaviour:
     y: 0
     width: 1058
     height: 731
-  m_MinSize: {x: 303, y: 442}
+  m_MinSize: {x: 601, y: 542}
   m_MaxSize: {x: 8003, y: 8042}
   vertical: 1
-  controlID: 18
+  controlID: 95
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -184,7 +184,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
+  m_Name: InputActionEditorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -193,15 +193,15 @@ MonoBehaviour:
     y: 0
     width: 1058
     height: 451
-  m_MinSize: {x: 201, y: 221}
+  m_MinSize: {x: 601, y: 321}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 17}
   - {fileID: 16}
   - {fileID: 13}
-  m_Selected: 1
-  m_LastSelected: 2
+  m_Selected: 2
+  m_LastSelected: 1
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_MinSize: {x: 303, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 80
+  controlID: 20
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -328,8 +328,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73.6
-    width: 1057.4
-    height: 429.4
+    width: 1057
+    height: 430
   m_ViewDataDictionary: {fileID: 0}
   m_ActionMapsTreeState:
     scrollPos: {x: 0, y: 0}
@@ -355,8 +355,8 @@ MonoBehaviour:
     m_SearchString: 
   m_ActionsTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 1b65bf4f
-    m_LastClickedID: 1337943323
+    m_SelectedIDs: 8abd2b96
+    m_LastClickedID: -1775518326
     m_ExpandedIDs: 13094091ba12bf9964016d9a01eca2a2172606aeb8f51fae6c186bbc14c713bfb633e9bfac9349cfa8a8aad02082a2dffc3532ec004ec509e5f94d0a4a50e82865a66f33e29b5f3c2a39344f1dce0d534a9fed553271875d75a2ea5e1a991a6514fdd2718ef01c7303e9e9745879a17f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -475,40 +475,38 @@ MonoBehaviour:
       \"interactions\": \"\"\n                }\n            ],\n            \"bindings\":
       [\n                {\n                    \"name\": \"\",\n                   
       \"id\": \"6d91db1b-79da-423d-b1b0-e3491caa8fe3\",\n                    \"path\":
-      \"<DualShockGamepad>/rightShoulder\",\n                    \"interactions\":
-      \"\",\n                    \"processors\": \"\",\n                    \"groups\":
-      \"\",\n                    \"action\": \"jump\",\n                    \"isComposite\":
-      false,\n                    \"isPartOfComposite\": false\n                },\n               
-      {\n                    \"name\": \"2D Vector\",\n                    \"id\":
-      \"24e5d3e4-54ac-4022-a426-bf8da9a8bb6a\",\n                    \"path\": \"2DVector\",\n                   
-      \"interactions\": \"\",\n                    \"processors\": \"\",\n                   
-      \"groups\": \"\",\n                    \"action\": \"moveVector\",\n                   
-      \"isComposite\": true,\n                    \"isPartOfComposite\": false\n               
-      },\n                {\n                    \"name\": \"left\",\n                   
-      \"id\": \"8cac25d3-4c13-403f-93e0-8fed6cdb13f7\",\n                    \"path\":
-      \"<DualShockGamepad>/leftTrigger\",\n                    \"interactions\":
+      \"<Gamepad>/rightShoulder\",\n                    \"interactions\": \"\",\n                   
+      \"processors\": \"\",\n                    \"groups\": \"\",\n                   
+      \"action\": \"jump\",\n                    \"isComposite\": false,\n                   
+      \"isPartOfComposite\": false\n                },\n                {\n                   
+      \"name\": \"2D Vector\",\n                    \"id\": \"24e5d3e4-54ac-4022-a426-bf8da9a8bb6a\",\n                   
+      \"path\": \"2DVector\",\n                    \"interactions\": \"\",\n                   
+      \"processors\": \"\",\n                    \"groups\": \"\",\n                   
+      \"action\": \"moveVector\",\n                    \"isComposite\": true,\n                   
+      \"isPartOfComposite\": false\n                },\n                {\n                   
+      \"name\": \"left\",\n                    \"id\": \"8cac25d3-4c13-403f-93e0-8fed6cdb13f7\",\n                   
+      \"path\": \"<Gamepad>/leftTrigger\",\n                    \"interactions\":
       \"\",\n                    \"processors\": \"\",\n                    \"groups\":
       \"\",\n                    \"action\": \"moveVector\",\n                   
       \"isComposite\": false,\n                    \"isPartOfComposite\": true\n               
       },\n                {\n                    \"name\": \"right\",\n                   
       \"id\": \"42fb4659-54d8-4a5c-94e7-6190918796f2\",\n                    \"path\":
-      \"<DualShockGamepad>/rightTrigger\",\n                    \"interactions\":
-      \"\",\n                    \"processors\": \"\",\n                    \"groups\":
-      \"\",\n                    \"action\": \"moveVector\",\n                   
-      \"isComposite\": false,\n                    \"isPartOfComposite\": true\n               
-      },\n                {\n                    \"name\": \"\",\n                   
-      \"id\": \"aaf11a60-af63-414b-901e-76ca0c9e3c29\",\n                    \"path\":
-      \"<DualShockGamepad>/rightTrigger\",\n                    \"interactions\":
+      \"<Gamepad>/rightTrigger\",\n                    \"interactions\": \"\",\n                   
+      \"processors\": \"\",\n                    \"groups\": \"\",\n                   
+      \"action\": \"moveVector\",\n                    \"isComposite\": false,\n                   
+      \"isPartOfComposite\": true\n                },\n                {\n                   
+      \"name\": \"\",\n                    \"id\": \"aaf11a60-af63-414b-901e-76ca0c9e3c29\",\n                   
+      \"path\": \"<Gamepad>/rightTrigger\",\n                    \"interactions\":
       \"\",\n                    \"processors\": \"\",\n                    \"groups\":
       \"\",\n                    \"action\": \"moveR\",\n                    \"isComposite\":
       false,\n                    \"isPartOfComposite\": false\n                },\n               
       {\n                    \"name\": \"\",\n                    \"id\": \"471e11d3-4331-4575-aeac-4776003a7b56\",\n                   
-      \"path\": \"<DualShockGamepad>/leftTrigger\",\n                    \"interactions\":
+      \"path\": \"<Gamepad>/leftTrigger\",\n                    \"interactions\":
       \"\",\n                    \"processors\": \"\",\n                    \"groups\":
       \"\",\n                    \"action\": \"MoveL\",\n                    \"isComposite\":
       false,\n                    \"isPartOfComposite\": false\n                },\n               
       {\n                    \"name\": \"\",\n                    \"id\": \"2a55bdcb-8c75-48ca-a009-c755a00b5151\",\n                   
-      \"path\": \"<DualShockGamepad>/leftShoulder\",\n                    \"interactions\":
+      \"path\": \"<Gamepad>/leftShoulder\",\n                    \"interactions\":
       \"\",\n                    \"processors\": \"\",\n                    \"groups\":
       \"\",\n                    \"action\": \"checkRotation\",\n                   
       \"isComposite\": false,\n                    \"isPartOfComposite\": false\n               
@@ -519,19 +517,18 @@ MonoBehaviour:
       \"action\": \"RightVertical\",\n                    \"isComposite\": true,\n                   
       \"isPartOfComposite\": false\n                },\n                {\n                   
       \"name\": \"negative\",\n                    \"id\": \"42bddc78-984c-4b31-ba70-648e96cfdc3f\",\n                   
-      \"path\": \"<DualShockGamepad>/rightStick/down\",\n                    \"interactions\":
+      \"path\": \"<Gamepad>/rightStick/down\",\n                    \"interactions\":
       \"\",\n                    \"processors\": \"\",\n                    \"groups\":
       \"\",\n                    \"action\": \"RightVertical\",\n                   
       \"isComposite\": false,\n                    \"isPartOfComposite\": true\n               
       },\n                {\n                    \"name\": \"positive\",\n                   
       \"id\": \"42d36f5a-76cc-4192-811e-8f158aee74b4\",\n                    \"path\":
-      \"<DualShockGamepad>/rightStick/up\",\n                    \"interactions\":
-      \"\",\n                    \"processors\": \"\",\n                    \"groups\":
-      \"\",\n                    \"action\": \"RightVertical\",\n                   
-      \"isComposite\": false,\n                    \"isPartOfComposite\": true\n               
-      },\n                {\n                    \"name\": \"Horizontal\",\n                   
-      \"id\": \"b77e5f19-d515-4764-800f-de66f22d0b11\",\n                    \"path\":
-      \"1DAxis\",\n                    \"interactions\": \"\",\n                   
+      \"<Gamepad>/rightStick/up\",\n                    \"interactions\": \"\",\n                   
+      \"processors\": \"\",\n                    \"groups\": \"\",\n                   
+      \"action\": \"RightVertical\",\n                    \"isComposite\": false,\n                   
+      \"isPartOfComposite\": true\n                },\n                {\n                   
+      \"name\": \"Horizontal\",\n                    \"id\": \"b77e5f19-d515-4764-800f-de66f22d0b11\",\n                   
+      \"path\": \"1DAxis\",\n                    \"interactions\": \"\",\n                   
       \"processors\": \"\",\n                    \"groups\": \"\",\n                   
       \"action\": \"RightHorizontal\",\n                    \"isComposite\": true,\n                   
       \"isPartOfComposite\": false\n                },\n                {\n                   
@@ -552,34 +549,33 @@ MonoBehaviour:
       \"action\": \"LeftVertical\",\n                    \"isComposite\": true,\n                   
       \"isPartOfComposite\": false\n                },\n                {\n                   
       \"name\": \"negative\",\n                    \"id\": \"4c39d075-c8ae-4b0e-adac-2632d43e6ce0\",\n                   
-      \"path\": \"<DualShockGamepad>/leftStick/down\",\n                    \"interactions\":
+      \"path\": \"<Gamepad>/leftStick/down\",\n                    \"interactions\":
       \"\",\n                    \"processors\": \"\",\n                    \"groups\":
       \"\",\n                    \"action\": \"LeftVertical\",\n                   
       \"isComposite\": false,\n                    \"isPartOfComposite\": true\n               
       },\n                {\n                    \"name\": \"positive\",\n                   
       \"id\": \"b58a58f2-868f-4cc2-8263-ae94bacb69c9\",\n                    \"path\":
-      \"<DualShockGamepad>/leftStick/up\",\n                    \"interactions\":
-      \"\",\n                    \"processors\": \"\",\n                    \"groups\":
-      \"\",\n                    \"action\": \"LeftVertical\",\n                   
-      \"isComposite\": false,\n                    \"isPartOfComposite\": true\n               
-      },\n                {\n                    \"name\": \"LeftH\",\n                   
-      \"id\": \"f421d38d-c53b-4a2f-8be8-5416fcc4afb8\",\n                    \"path\":
-      \"1DAxis\",\n                    \"interactions\": \"\",\n                   
+      \"<Gamepad>/leftStick/up\",\n                    \"interactions\": \"\",\n                   
+      \"processors\": \"\",\n                    \"groups\": \"\",\n                   
+      \"action\": \"LeftVertical\",\n                    \"isComposite\": false,\n                   
+      \"isPartOfComposite\": true\n                },\n                {\n                   
+      \"name\": \"LeftH\",\n                    \"id\": \"f421d38d-c53b-4a2f-8be8-5416fcc4afb8\",\n                   
+      \"path\": \"1DAxis\",\n                    \"interactions\": \"\",\n                   
       \"processors\": \"\",\n                    \"groups\": \"\",\n                   
       \"action\": \"LeftHorizontal\",\n                    \"isComposite\": true,\n                   
       \"isPartOfComposite\": false\n                },\n                {\n                   
       \"name\": \"negative\",\n                    \"id\": \"dc371c25-2f8f-4a88-992b-24fc94d1bda8\",\n                   
-      \"path\": \"<DualShockGamepad>/leftStick/left\",\n                    \"interactions\":
+      \"path\": \"<Gamepad>/leftStick/left\",\n                    \"interactions\":
       \"\",\n                    \"processors\": \"\",\n                    \"groups\":
       \"\",\n                    \"action\": \"LeftHorizontal\",\n                   
       \"isComposite\": false,\n                    \"isPartOfComposite\": true\n               
       },\n                {\n                    \"name\": \"positive\",\n                   
       \"id\": \"d21dfc51-4d36-41d3-afa2-097e78850608\",\n                    \"path\":
-      \"<DualShockGamepad>/leftStick/right\",\n                    \"interactions\":
-      \"\",\n                    \"processors\": \"\",\n                    \"groups\":
-      \"\",\n                    \"action\": \"LeftHorizontal\",\n                   
-      \"isComposite\": false,\n                    \"isPartOfComposite\": true\n               
-      }\n            ]\n        }\n    ],\n    \"controlSchemes\": []\n}"
+      \"<Gamepad>/leftStick/right\",\n                    \"interactions\": \"\",\n                   
+      \"processors\": \"\",\n                    \"groups\": \"\",\n                   
+      \"action\": \"LeftHorizontal\",\n                    \"isComposite\": false,\n                   
+      \"isPartOfComposite\": true\n                }\n            ]\n        }\n   
+      ],\n    \"controlSchemes\": []\n}"
     m_IsDirty: 0
   m_Toolbar:
     m_IsDirty: 0
@@ -680,13 +676,13 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/scripts
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Nolan\Desktop\unityProjects\KimBot
+  m_LastProjectPath: C:\Users\Nolan\Desktop\unityProjects\gameJam\kimMagicMountain\KimMagicmountain\KimBot
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 2c3a0000
-    m_LastClickedID: 14892
+    m_SelectedIDs: 703b0000
+    m_LastClickedID: 15216
     m_ExpandedIDs: 000000001c3a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -882,10 +878,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 7.2000003
-    y: 80.8
-    width: 1217
-    height: 423
+    x: 0
+    y: 73.6
+    width: 1057
+    height: 430
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: a39d94938baefd447983ec80ebdaaec6
@@ -1007,7 +1003,7 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 3e2e0000
+      m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: 5afbffff
       m_RenameOverlay:

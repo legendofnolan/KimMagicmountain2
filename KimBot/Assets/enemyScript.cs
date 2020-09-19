@@ -11,6 +11,8 @@ public class enemyScript : MonoBehaviour
     public Rigidbody2D rb;
     public bool collided = false;
 
+    public int health;
+
 
 
     // Start is called before the first frame update
@@ -27,13 +29,23 @@ public class enemyScript : MonoBehaviour
         enemyVector.Normalize();
         transform.Translate(enemyVector * Time.deltaTime * 2);
 
-        distance = Vector3.Distance(player.transform.position, gameObject.transform.position);
-        //player.gameObject.GetComponent<SpriteRenderer>().size.x
-        if (distance <=  2.1) {
-            collided = true;
-            Destroy(gameObject);
+        //distance = Vector3.Distance(player.transform.position, gameObject.transform.position);
+        ////player.gameObject.GetComponent<SpriteRenderer>().size.x
+        //if (distance <=  2.1) {
+        //    collided = true;
+        //    Destroy(gameObject);
 
-            Debug.Log("hit");
+        //    Debug.Log("hit");
+        //}
+    }
+
+    void OnTriggerEnter2D(Collider2D coll)
+    {
+        if (coll.gameObject.name == "kim")
+        {
+            Destroy(gameObject);
+            health = health - 1;
+            Debug.Log(health);
         }
     }
 }

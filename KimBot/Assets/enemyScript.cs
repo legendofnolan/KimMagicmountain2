@@ -5,7 +5,7 @@ using UnityEngine;
 public class enemyScript : MonoBehaviour
 {
 
-    public Transform player;
+    private GameObject player;
     public Vector2 enemyVector;
     private float distance;
     public Rigidbody2D rb;
@@ -19,12 +19,14 @@ public class enemyScript : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+       player = GameObject.Find("kim");
+
+
         enemyVector = new Vector2(player.transform.position.x - gameObject.transform.position.x, player.transform.position.y - gameObject.transform.position.y);
         enemyVector.Normalize();
         transform.Translate(enemyVector * Time.deltaTime * 2);

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class spawnManager : MonoBehaviour
 {
-    public Transform enemyPrefab;
-    //public GameObject enemyPrefab;
+    public Transform enemyLocation;
+    public GameObject enemyPrefab;
 
     public float intervalWave;
 
@@ -14,17 +14,19 @@ public class spawnManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        InvokeRepeating("SpawnObject", 1.0f, intervalWave);
     }
 
     // Update is called once per frame
     void Update()
     {
-        InvokeRepeating("spawnObject", 1.0f, intervalWave);
+        
     }
+
 
     void SpawnObject()
     {
-        Instantiate(enemyPrefab, enemyPrefab.transform.position, enemyPrefab.transform.rotation);
+        Instantiate(enemyPrefab, enemyLocation.transform.position, enemyPrefab.transform.rotation);
+        intervalWave -= -0.01f;
     }
 }

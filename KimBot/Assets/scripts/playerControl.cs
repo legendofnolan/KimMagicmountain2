@@ -6,7 +6,9 @@ using UnityEngine.InputSystem;
 public class playerControl : MonoBehaviour
 {
     [SerializeField] private LayerMask Playermask;
-    
+
+    public int health = 100;
+    private int healthLoseRate = 5;
     bool isJumping = false;
     //float moveL = 0
 
@@ -17,8 +19,6 @@ public class playerControl : MonoBehaviour
 
     public float moveSpeed = 5f;
     public float ceiling = 5f;
-
-
 
     // Start is called before the first frame update
     void Start()
@@ -62,8 +62,6 @@ public class playerControl : MonoBehaviour
         {
             isJumping = false;
         }
-        
-
     }
 
 
@@ -83,6 +81,24 @@ public class playerControl : MonoBehaviour
 
     }
 
+    void OnTriggerEnter2D(Collider2D coll) {
+        if (coll.gameObject.tag == "enemy") {
+            if (this.health <= 0)
+            {
+                Debug.Log("dead");
+                //Destroy(gameObject);
+                //Destroy(coll.gameObject);
+                spawnManager.stopSpawn = true;
+                gameObject.SetActive(false);
+                gameObject.GetComponent<Renderer>().enabled = false;
+                //Game over logic
+            }
+            else
+            {
+                health -= healthLoseRate;
 
-    //shoot
+                Debug.Log(health);
+            }
+        }
+    }
 }

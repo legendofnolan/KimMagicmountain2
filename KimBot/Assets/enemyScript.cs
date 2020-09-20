@@ -11,10 +11,6 @@ public class enemyScript : MonoBehaviour
     public Rigidbody2D rb;
     public bool collided = false;
 
-    public int health;
-
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -24,21 +20,23 @@ public class enemyScript : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-       player = GameObject.Find("kim");
+        if (!spawnManager.stopSpawn)
+        {
+            player = GameObject.Find("kim");
 
+            enemyVector = new Vector2(player.transform.position.x - gameObject.transform.position.x, player.transform.position.y - gameObject.transform.position.y);
+            enemyVector.Normalize();
+            transform.Translate(enemyVector * Time.deltaTime * 2);
 
-        enemyVector = new Vector2(player.transform.position.x - gameObject.transform.position.x, player.transform.position.y - gameObject.transform.position.y);
-        enemyVector.Normalize();
-        transform.Translate(enemyVector * Time.deltaTime * 2);
+            //distance = Vector3.Distance(player.transform.position, gameObject.transform.position);
+            ////player.gameObject.GetComponent<SpriteRenderer>().size.x
+            //if (distance <=  2.1) {
+            //    collided = true;
+            //    Destroy(gameObject);
 
-        //distance = Vector3.Distance(player.transform.position, gameObject.transform.position);
-        ////player.gameObject.GetComponent<SpriteRenderer>().size.x
-        //if (distance <=  2.1) {
-        //    collided = true;
-        //    Destroy(gameObject);
-
-        //    Debug.Log("hit");
-        //}
+            //    Debug.Log("hit");
+            //}
+        }
     }
 
     void OnTriggerEnter2D(Collider2D coll)
@@ -46,8 +44,6 @@ public class enemyScript : MonoBehaviour
         if (coll.gameObject.name == "kim")
         {
             Destroy(gameObject);
-            health = health - 1;
-            Debug.Log(health);
         }
     }
 }

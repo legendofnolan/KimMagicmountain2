@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class playerControl : MonoBehaviour
 {
     [SerializeField] private LayerMask Playermask;
+    public Text textbox;
 
     public int health = 100;
     private int healthLoseRate = 5;
@@ -25,6 +27,8 @@ public class playerControl : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         boxCollider2d = transform.GetComponent<BoxCollider2D>();
+        textbox = GameObject.Find("Health/Text").GetComponent<Text>();
+        textbox.text = health.ToString();
     }
 
 
@@ -32,7 +36,7 @@ public class playerControl : MonoBehaviour
     {
         //this one kinda works
         transform.position += inputVector * moveSpeed * Time.deltaTime;
-
+        textbox.text = health.ToString();
 
         if (IsGrounded() && isJumping == true )
         {
@@ -96,7 +100,6 @@ public class playerControl : MonoBehaviour
             else
             {
                 health -= healthLoseRate;
-
                 Debug.Log(health);
             }
         }

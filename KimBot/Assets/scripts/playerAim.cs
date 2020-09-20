@@ -31,19 +31,10 @@ public class playerAim : MonoBehaviour
     private void Update()
     {
 
-        //if (readyFire == false)
-        //{
-        //    StartCoroutine(checkFireBool());
-
-        //}
-
-
-
     }
 
     private void FixedUpdate()
     {
-
       
         target = new Vector3(-horizontal, verrtical);
 
@@ -78,21 +69,10 @@ public class playerAim : MonoBehaviour
          */
 
 
-
-
-
         
     }
 
 
-    //private IEnumerator checkFireBool()
-    //{
-    //    //yield on a new YieldInstruction that waits for 5 seconds.
-    //    yield return new WaitForSeconds(1);
-    //    readyFire = true;
-    //}
-
-    // Start is called before the first frame update
     void Start()
     {
         armRB = GetComponent<Rigidbody2D>();

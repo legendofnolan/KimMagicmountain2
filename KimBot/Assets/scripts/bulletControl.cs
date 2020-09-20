@@ -8,7 +8,7 @@ public class bulletControl : MonoBehaviour
     // Start is called before the first frame update
     public float speed;
 
-    private Vector2 aimVector = new Vector2(0, 0);
+   // private Vector2 aimVector = new Vector2(0, 0);
     private Rigidbody2D rb;
 
     void Start()
@@ -32,7 +32,7 @@ public class bulletControl : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D coll)
     {
-        if (coll.gameObject.name == "enemy")
+        if (coll.gameObject.tag == "enemy")
         {
             Destroy(gameObject);
             Destroy(coll.gameObject);
